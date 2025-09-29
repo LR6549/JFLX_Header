@@ -26,7 +26,7 @@ std::cout << v1.length(); // Outputs 5
 bool hit = JFLX::aabb::inBounds(x1, y1, w1, h1, x2, y2); // true if collided
 ```
 #### 3. `jsonFunctionality.hpp`
-- Simple JSON loading and saving using nlohmann/json [https://github.com/nlohmann/json]
+- Simple JSON loading and saving using [nlohmann/json](https://github.com/nlohmann/json)
 - Example:
 ```cpp
 nlohmann::json j;
