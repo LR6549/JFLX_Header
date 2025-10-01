@@ -56,7 +56,7 @@ namespace JFLX {
             double dot(const Vector2& pVector) const {
                 const Vector2 pVect1 = normalized();
                 const Vector2 pVect2 = pVector.normalized();
-                return (pVect1.x * pVect2.x) + (pVect1.y * pVect2.y)
+                return (pVect1.x * pVect2.x) + (pVect1.y * pVect2.y);
             }
         
             Vector2 operator+(const Vector2& other) const {
