@@ -16,7 +16,7 @@ namespace JFLX {
     bool loadJson(std::string pathToJson, nlohmann::json& j) {
         std::ifstream loadedFile(pathToJson);
         if (!loadedFile.is_open()) {
-            log("Failed to open ", pathToJson, LOGTYPE::ERROR);
+            log("Failed to open ", pathToJson, LOGTYPE::JFLX_ERROR);
             return false;
         }
         
@@ -28,7 +28,7 @@ namespace JFLX {
         std::ofstream file(pathToJson);
 
         if (!file.is_open()) {
-            log("JSON COULD NOT BE SAVED: ", ("Json Fie could not be opened located at: " + pathToJson), LOGTYPE::ERROR);
+            log("JSON COULD NOT BE SAVED: ", ("Json Fie could not be opened located at: " + pathToJson), LOGTYPE::JFLX_ERROR);
             return false;
         }
 
